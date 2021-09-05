@@ -19,12 +19,13 @@ body {
     background: url(./freq.jpg) no-repeat center center fixed;
     background-size: cover;
 }
+
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 50px;
+    padding: 30px;
+    margin-bottom: 100px;
     /* border-bottom: 1px solid #fff; */
 }
 header ul {
@@ -77,6 +78,7 @@ header ul li a:hover {
     margin: 0 auto; /*mover elementos para o centro*/
     padding: 18px;
     font-size: 20px;
+    
 }
 .form {
     width: 40%;
@@ -110,6 +112,10 @@ header ul li a:hover {
 .form button:hover {
     background-color: #000;
     color: #a9a9a9;
+}
+
+.player audio {
+    margin: 50px;
 }
 @media only screen and (max-width: 770px){
     .form {
