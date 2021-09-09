@@ -95,6 +95,7 @@ header ul li a:hover {
 }
 .form input:hover {
     color: black;
+    
 }
 .form button {
     width: 18%;
@@ -111,11 +112,13 @@ header ul li a:hover {
 }
 .form button:hover {
     background-color: #000;
+    transition: 0.5s;
     color: #a9a9a9;
+    
 }
 
 .player audio {
-    margin: 50px;
+    margin: 20px;
 }
 @media only screen and (max-width: 770px){
     .form {

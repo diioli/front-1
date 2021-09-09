@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,600;1,100;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style1.css">
-    <link rel="script" href="scripts.js">
+    <script type="text/javascript" src="scripts.js"></script>
     <title>indeed beats</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
         <section class="container">
             <div class="name">
                 <h1>indeed beats</h1>
-                <h5>independent label</h5>
+                <!-- <h5>independent label</h5> -->
             </div>
 
             <div onclick="displayabout()" id="arrow">
@@ -47,6 +47,21 @@
                 </p>
             </div>
 
+            <div class="player">
+                <div class="song-details">
+                    <h2 id="song-title">Lorem ipsum dolor</h2>
+                    <h3 id="song-artist">By diioli</h3>
+                <audio id="music-player" src=""></audio>
+                <div class="player-controls">
+                    <button id="prev-btn" class="skip-btn"><i class="fas fa-backward fa-lg"></i></button>
+                    <button id="play-btn" class="play"><i id="play-icon" class="fas fa-play fa-2x"></i></button>
+                    <button id="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
+                </div>
+                <div class="next-up">
+                    <p>Next: <span id="song-next-up">Lorem ipsum dolor</span></p>
+                </div>
+            </div>
+            
             <div>
                 <h5>send us crazy beats!</h5>
             </div>
@@ -57,11 +72,7 @@
                     <button>submit now!</button>
                 </form>
             </div>
-            <div class="player">
-                <audio src="" controls id="audioPlayer">
-
-                </audio>
-            </div>
+            
         </section>
 
     </main>
