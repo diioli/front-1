@@ -25,8 +25,8 @@ window.onload = () => {
             img_path: './images/uno.jpg'
         },
         {
-            title: 'charlie´s ghosts',
-            artist: 'by diioli',
+            title: 'charlie/s ghosts',
+            artist: 'diioli',
             song_path: 'audio/charlies-ghosts.mp3',
             img_path: './images/uno.jpg'
         },
@@ -84,8 +84,8 @@ window.onload = () => {
     
         //song_img_el.style = "background-image: url('" + song.img_path + "')";
         song_title_el.innerText = song.title;
-        song_artist_el.innerText = song.artist;
-        song_next_up_el.innerText = songs[next_song_index].title + " by " +  songs[next_song_index].artist;
+        //song_artist_el.innerText = song.artist;
+        song_next_up_el.innerText = songs[next_song_index].title;
     
     // define o caminho para acessar a pasta com as musicas
     audio_player.src = song.song_path;
