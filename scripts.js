@@ -81,18 +81,17 @@ window.onload = () => {
     // ação para atualizar o player
     function UpdatePlayer() {
         let song = songs[current_song_index];
-    
         //song_img_el.style = "background-image: url('" + song.img_path + "')";
         song_title_el.innerText = song.title;
         //song_artist_el.innerText = song.artist;
-        song_next_up_el.innerText = songs[next_song_index].title;
+        //song_next_up_el.innerText = songs[next_song_index].title;
     
     // define o caminho para acessar a pasta com as musicas
     audio_player.src = song.song_path;
     }
 
     function TogglePlaySong() {
-        if (audio_player.paused) {
+        if  (audio_player.paused) {
             audio_player.play();
             play_btn_icon.classList.remove('fa-play');
             play_btn_icon.classList.add('fa-pause');
@@ -103,7 +102,7 @@ window.onload = () => {
     
         }
     }
-    function ChangeSong (next = true ) {
+    function ChangeSong (next = true) {
         if (next) {
             current_song_index++;
             next_song_index = current_song_index +1;
